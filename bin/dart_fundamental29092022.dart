@@ -14,7 +14,17 @@ void main(List<String> arguments) {
   //    '\u{2651} \u{2652} \u{2653} \u{2654}'
   // );
   // print(String.fromCharCodes(runes));
-  dynamic a = 10;
-  a = "10";
-  print(a);
+  // dynamic variableDynamic = 10;
+  // variableDynamic = "10";
+  // print(variableDynamic.runtimeType);
+
+  // Xử lý chuỗi
+  // String text1 = "Hello";
+  // String text2 = "Word";
+  //
+  // String outPut = 'Select * from'
+  //       ' cache '
+  //       'where id = 1';
+  // print(outPut);
+
 }
