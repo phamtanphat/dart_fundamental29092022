@@ -88,4 +88,29 @@ void main(List<String> arguments) {
 
   // Out put
   // Thuộc phân loại nào
+
+  print("Chương trình tính BMI");
+  print("Mời bạn nhập chiều cao(m): ");
+  String stringHeight = stdin.readLineSync() ?? "";
+  print("Mời bạn nhập cân nặng(kg): ");
+  String stringWeight = stdin.readLineSync() ?? "";
+
+  if (stringHeight.isEmpty || stringWeight.isEmpty) {
+    print("Nhập thông chưa đầy đủ");
+  } else {
+    num weight = num.parse(stringWeight);
+    num height = num.parse(stringHeight);
+
+    num bmi = weight / (height * height);
+
+    String message = "";
+    if (bmi < 18.5) message = "Gầy";
+    else if (bmi < 25) message = "Bình thường";
+    else if (bmi < 30) message = "Hơi béo";
+    else if (bmi < 35) message = "Béo cấp 1";
+    else if (bmi < 40) message = "Béo cấp 2";
+    else message = "Béo cấp 3";
+
+    print(message);
+  }
 }
