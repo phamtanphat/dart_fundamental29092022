@@ -1,3 +1,4 @@
+
 void main(List<String> arguments) {
 
   // 1: Kiểu dữ liệu
@@ -22,9 +23,32 @@ void main(List<String> arguments) {
   // String text1 = "Hello";
   // String text2 = "Word";
   //
-  // String outPut = 'Select * from'
-  //       ' cache '
-  //       'where id = 1';
+  // String outPut = "Select * from"
+  //       " cache "
+  //       "where id = 1";
   // print(outPut);
 
+  // String name = "Phat";
+  // String sayHi = "My name's $name";
+  //
+  // int a = 5;
+  // int b = 10;
+  // String result = "${b - a}";
+
+  // Toán tử
+  // int a = 5;
+  // int b = 10;
+  // num result = a % b;
+  // print(result);
+
+  int a = 5;
+  int b = 5;
+  // Toán tử a++
+  // 1 - Gán giá trị trước
+  // 2 - Tăng giá trị thêm 1
+
+  int result = a++ - --b + b-- - a++ + --a;
+  // 5 - --b + b-- - a++ + --a;
+
+  // a = ?, b = ?, result = ?
 }
