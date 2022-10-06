@@ -89,28 +89,60 @@ void main(List<String> arguments) {
   // Out put
   // Thuộc phân loại nào
 
-  print("Chương trình tính BMI");
-  print("Mời bạn nhập chiều cao(m): ");
-  String stringHeight = stdin.readLineSync() ?? "";
-  print("Mời bạn nhập cân nặng(kg): ");
-  String stringWeight = stdin.readLineSync() ?? "";
+  // print("Chương trình tính BMI");
+  // print("Mời bạn nhập chiều cao(m): ");
+  // String stringHeight = stdin.readLineSync() ?? "";
+  // print("Mời bạn nhập cân nặng(kg): ");
+  // String stringWeight = stdin.readLineSync() ?? "";
+  //
+  // if (stringHeight.isEmpty || stringWeight.isEmpty) {
+  //   print("Nhập thông chưa đầy đủ");
+  // } else {
+  //   num weight = num.parse(stringWeight);
+  //   num height = num.parse(stringHeight);
+  //
+  //   num bmi = weight / (height * height);
+  //
+  //   String message = "";
+  //   if (bmi < 18.5) message = "Gầy";
+  //   else if (bmi < 25) message = "Bình thường";
+  //   else if (bmi < 30) message = "Hơi béo";
+  //   else if (bmi < 35) message = "Béo cấp 1";
+  //   else if (bmi < 40) message = "Béo cấp 2";
+  //   else message = "Béo cấp 3";
+  //
+  //   print(message);
+  // }
 
-  if (stringHeight.isEmpty || stringWeight.isEmpty) {
-    print("Nhập thông chưa đầy đủ");
-  } else {
-    num weight = num.parse(stringWeight);
-    num height = num.parse(stringHeight);
+  // Câu điều kiện switch
 
-    num bmi = weight / (height * height);
+  int month = 5;
 
-    String message = "";
-    if (bmi < 18.5) message = "Gầy";
-    else if (bmi < 25) message = "Bình thường";
-    else if (bmi < 30) message = "Hơi béo";
-    else if (bmi < 35) message = "Béo cấp 1";
-    else if (bmi < 40) message = "Béo cấp 2";
-    else message = "Béo cấp 3";
-
-    print(message);
+  // Nên dùng biến thay cho hàm để tránh duplicate
+  String message = "";
+  switch(month) {
+    case 1:
+    case 2:
+    case 3:
+      message = "Quý 1";
+      break;
+    case 4:
+    case 5:
+    case 6:
+      message = "Quý 2";
+      break;
+    case 7:
+    case 8:
+    case 9:
+      message = "Quý 3";
+      break;
+    case 10:
+    case 11:
+    case 12:
+      message = "Quý 4";
+      break;
   }
+
+  print(message);
+
 }
