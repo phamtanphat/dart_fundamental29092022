@@ -1,6 +1,6 @@
+import 'dart:io';
 
 void main(List<String> arguments) {
-
   // 1: Kiểu dữ liệu
   // Kiểu số
   // num weight = 75.5;
@@ -41,13 +41,13 @@ void main(List<String> arguments) {
   // num result = a % b;
   // print(result);
 
-  int a = 5;
-  int b = 5;
+  // int a = 5;
+  // int b = 5;
   // Toán tử a++
   // 1 - Gán giá trị trước
   // 2 - Tăng giá trị thêm 1
 
-  int result = a++ - --b + b-- - a++ + --a;
+  // int result = a++ - --b + b-- - a++ + --a;
   // 5 - --b + b-- - a++ + --a; a = 6, b = 5
   // 5 - 4 + b-- - a++ + --a; a = 6, b = 4
   // 5 - 4 + 4 - a++ + --a; a = 6, b = 3
@@ -56,9 +56,36 @@ void main(List<String> arguments) {
   // 5
 
   // a = 6, b = 3, result = 5
-  print(
-    'a = $a\n'
-    'b = $b\n'
-    'result = $result'
-  );
+  // print(
+  //   'a = $a\n'
+  //   'b = $b\n'
+  //   'result = $result'
+  // );
+
+  // var a;
+  // var b = a ?? 10;
+  // print(b);
+
+  // Câu điều kiện
+  // int a = 10;
+  // int b = 5;
+  //
+  // if (a > b) print("A lớn hơn B");
+  // else if (a == b) print("A bằng B");
+  // else print("A nhỏ hơn B");
+
+  // Input
+  // print("Nhập tên: ");
+  // String name = stdin.readLineSync() ?? "";
+  // print("Tên bạn là $name");
+  // String name = stdin.readLineSync() ?? "";
+
+  // BMI
+  // Requirement:
+  // 1 - Chiều cao (m)
+  // 2 - Cân nặng (kg)
+  // Công thức : cân nặng / chiều cao x chiều cao
+
+  // Out put
+  // Thuộc phân loại nào
 }
