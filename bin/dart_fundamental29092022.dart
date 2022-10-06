@@ -48,7 +48,17 @@ void main(List<String> arguments) {
   // 2 - Tăng giá trị thêm 1
 
   int result = a++ - --b + b-- - a++ + --a;
-  // 5 - --b + b-- - a++ + --a;
+  // 5 - --b + b-- - a++ + --a; a = 6, b = 5
+  // 5 - 4 + b-- - a++ + --a; a = 6, b = 4
+  // 5 - 4 + 4 - a++ + --a; a = 6, b = 3
+  // 5 - 4 + 4 - 6 + --a; a = 7, b = 3
+  // 5 - 4 + 4 - 6 + 6; a = 6, b = 3
+  // 5
 
-  // a = ?, b = ?, result = ?
+  // a = 6, b = 3, result = 5
+  print(
+    'a = $a\n'
+    'b = $b\n'
+    'result = $result'
+  );
 }
