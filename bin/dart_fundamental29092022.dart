@@ -116,33 +116,54 @@ void main(List<String> arguments) {
 
   // Câu điều kiện switch
 
-  int month = 5;
+  // int month = 5;
 
   // Nên dùng biến thay cho hàm để tránh duplicate
-  String message = "";
-  switch(month) {
-    case 1:
-    case 2:
-    case 3:
-      message = "Quý 1";
-      break;
-    case 4:
-    case 5:
-    case 6:
-      message = "Quý 2";
-      break;
-    case 7:
-    case 8:
-    case 9:
-      message = "Quý 3";
-      break;
-    case 10:
-    case 11:
-    case 12:
-      message = "Quý 4";
-      break;
-  }
+  // String message = "";
+  // switch(month) {
+  //   case 1:
+  //   case 2:
+  //   case 3:
+  //     message = "Quý 1";
+  //     break;
+  //   case 4:
+  //   case 5:
+  //   case 6:
+  //     message = "Quý 2";
+  //     break;
+  //   case 7:
+  //   case 8:
+  //   case 9:
+  //     message = "Quý 3";
+  //     break;
+  //   case 10:
+  //   case 11:
+  //   case 12:
+  //     message = "Quý 4";
+  //     break;
+  // }
+  //
+  // print(message);
 
-  print(message);
+  // var person = {
+  //   "name": "Nguyễn Văn Tèo",
+  //   "age": 10,
+  //   "isMale": true
+  // };
+  //
+  // print(person.runtimeType);
+  // print(person["name"]);
+
+  List<String> listNames = List.empty(growable: true);
+  // Thêm phần tử
+  listNames.add("A");
+  listNames.add("B");
+  listNames.add("C");
+  // Lấy dữ liệu từ vị trí
+  var value = listNames[0];
+  // Xóa dữ liệu
+  listNames.removeAt(listNames.length - 1);
+  print("Giá  trị phần tử thứ 0 $value");
+  print(listNames);
 
 }
