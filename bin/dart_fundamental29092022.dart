@@ -154,16 +154,67 @@ void main(List<String> arguments) {
   // print(person.runtimeType);
   // print(person["name"]);
 
-  List<String> listNames = List.empty(growable: true);
-  // Thêm phần tử
-  listNames.add("A");
-  listNames.add("B");
-  listNames.add("C");
-  // Lấy dữ liệu từ vị trí
-  var value = listNames[0];
-  // Xóa dữ liệu
-  listNames.removeAt(listNames.length - 1);
-  print("Giá  trị phần tử thứ 0 $value");
-  print(listNames);
+  // List<String> listNames = List.empty(growable: true);
+  // // Thêm phần tử
+  // listNames.add("A");
+  // listNames.add("B");
+  // listNames.add("C");
+  // // Lấy dữ liệu từ vị trí
+  // var value = listNames[0];
+  // // Xóa dữ liệu
+  // listNames.removeAt(listNames.length - 1);
+  // print("Giá  trị phần tử thứ 0 $value");
+  // print(listNames);
 
+  // Vòng lặp for
+  // for (int i = 0; i < 10; i++) {
+  //   print(i);
+  // }
+
+  // Bài tập
+  // In ngược từ 100 -> 0
+  // for (int i = 100; i >= 0; i--) {
+  //   print(i);
+  // }
+
+  // var arr1 = [1, 2, 3, 4, 5];
+  // var arr2 = [10, 20, 30, 40, 50];
+  //
+  // for (int i = 0; i < arr2.length; i++) {
+  //   for (int j = 0; j < arr1.length; j++) {
+  //     print(arr1[j] * arr2[i]);
+  //   }
+  // }
+
+  // 10
+  // 20
+  // 30
+  // ..
+  // 50
+  // 100
+  // 150
+  // 200
+  // 250
+
+  // for (int i = 0; i < 10; i++) {
+  //   if (i == 5) return;
+  //   print(i);
+  // }
+  //
+  // print("Tiếp tục");
+
+  // Kiểm tra số có phải là số nguyên tố không: 1551
+
+  int number = 1777;
+  int count = 1;
+
+  for (int i = 2; i <= number; i++) {
+    if (count == 3) {
+      print("Không phải là số nguyên tố");
+      return;
+    }
+    if (number % i == 0) count++;
+  }
+
+  print("Số $number là số nguyên tố");
 }
