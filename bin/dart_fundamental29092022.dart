@@ -205,16 +205,40 @@ void main(List<String> arguments) {
 
   // Kiểm tra số có phải là số nguyên tố không: 1551
 
-  int number = 1777;
-  int count = 1;
+  // int number = 1777;
+  // int count = 1;
+  //
+  // for (int i = 2; i <= number; i++) {
+  //   if (count == 3) {
+  //     print("Không phải là số nguyên tố");
+  //     return;
+  //   }
+  //   if (number % i == 0) count++;
+  // }
+  //
+  // print("Số $number là số nguyên tố");
 
-  for (int i = 2; i <= number; i++) {
-    if (count == 3) {
-      print("Không phải là số nguyên tố");
-      return;
+  // Vòng lặp while
+
+  // int number = 0;
+  //
+  // while (number < 10) {
+  //   print(number++);
+  // }
+
+  // Cho vòng lặp từ 100 tới 1: In ra số căn bậc 2
+
+  int i = 1000;
+
+  while (i >= 1) {
+    int number = 0;
+    while (number <= (i * i)) {
+      if (number * number == i) {
+        print(i);
+        break;
+      }
+      number++;
     }
-    if (number % i == 0) count++;
+    i--;
   }
-
-  print("Số $number là số nguyên tố");
 }
