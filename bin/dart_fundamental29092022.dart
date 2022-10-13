@@ -245,7 +245,5 @@ void main(List<String> arguments) {
   // }
 
   // Object va class
-  Person teo = Person();
-  teo.name = "Nguyen Van Teo";
-  teo.height = 170;
+  Person teo = Person("Nguyen Van Teo", 170);
 }
