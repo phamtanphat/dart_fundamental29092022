@@ -1,5 +1,7 @@
 import 'dart:io';
 
+import 'person.dart';
+
 void main(List<String> arguments) {
   // 1: Kiểu dữ liệu
   // Kiểu số
@@ -228,17 +230,22 @@ void main(List<String> arguments) {
 
   // Cho vòng lặp từ 100 tới 1: In ra số căn bậc 2
 
-  int i = 1000;
+  // int i = 1000;
+  //
+  // while (i >= 1) {
+  //   int number = 0;
+  //   while (number <= (i * i)) {
+  //     if (number * number == i) {
+  //       print(i);
+  //       break;
+  //     }
+  //     number++;
+  //   }
+  //   i--;
+  // }
 
-  while (i >= 1) {
-    int number = 0;
-    while (number <= (i * i)) {
-      if (number * number == i) {
-        print(i);
-        break;
-      }
-      number++;
-    }
-    i--;
-  }
+  // Object va class
+  Person teo = Person();
+  teo.name = "Nguyen Van Teo";
+  teo.height = 170;
 }
