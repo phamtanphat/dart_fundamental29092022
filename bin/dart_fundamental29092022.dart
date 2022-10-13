@@ -1,3 +1,4 @@
+import 'boy.dart';
 import 'person.dart';
 
 void main(List<String> arguments) {
@@ -243,8 +244,13 @@ void main(List<String> arguments) {
   // }
 
   // Object va class
-  Person teo = Person("Nguyen Van Teo", 170);
-  teo.toStringPerson();
+  // Person teo = Person("Nguyen Van Teo", 170);
+  // teo.toStringPerson();
+  // teo.name = "abc";
+  // print(teo.name);
+
+  Boy ti = Boy("Ti", 120, "10");
+  ti.toStringPerson();
 
   // Tính kế thừa
   // Tính đóng gói
