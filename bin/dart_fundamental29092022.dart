@@ -246,4 +246,5 @@ void main(List<String> arguments) {
 
   // Object va class
   Person teo = Person("Nguyen Van Teo", 170);
+  teo.toStringPerson();
 }

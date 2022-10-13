@@ -10,4 +10,8 @@ class Person {
   // }
 
   Person (this.name, this.height);
+
+  void toStringPerson(){
+    print("Person{name: $name, height: $height}");
+  }
 }
