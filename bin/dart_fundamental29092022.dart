@@ -1,3 +1,6 @@
+import 'abstraction_demo/pizza_cheese.dart';
+import 'abstraction_demo/pizza_store.dart';
+import 'abstraction_demo/pizza_vegetable.dart';
 import 'boy.dart';
 import 'person.dart';
 
@@ -249,11 +252,14 @@ void main(List<String> arguments) {
   // teo.name = "abc";
   // print(teo.name);
 
-  Boy ti = Boy("Ti", 120, "10");
-  ti.toStringPerson();
+  // Boy ti = Boy("Ti", 120, "10");
+  // ti.toStringPerson();
 
   // Tính kế thừa
   // Tính đóng gói
   // Tính đa hình
-  // Tình trượu tượng
+  // Tình trươu tượng
+
+  PizzaStore pizzaStore = PizzaStore();
+  pizzaStore.orderPizza(PizzaVegetable());
 }
